@@ -10,19 +10,34 @@ import org.junit.runner.RunWith;
 @RunWith(Enclosed.class)
 public class FizzBuzzTest {
 
-//	public static class 三の倍数の場合{
-//
-//	}
-//	public static class 五の倍数の場合{
-//
-//	}
-//	public static class その他の場合{
-//
-//	}
-
-	public static class 既存のテスト{
+	public static class 三の倍数の場合{
 		private FizzBuzz fizzbuzz;
+		@BeforeEach
+		public void 前準備() {
+			// 前準備
+			fizzbuzz = new FizzBuzz();
+		}
 
+		@Test
+		public void _3を渡したら文字列Fizzを返す() throws Exception {
+			assertEquals("Fizz", fizzbuzz.convert(3));
+		}
+	}
+	public static class 五の倍数の場合{
+		private FizzBuzz fizzbuzz;
+		@BeforeEach
+		public void 前準備() {
+			// 前準備
+			fizzbuzz = new FizzBuzz();
+		}
+
+		@Test
+		public void _5を渡したら文字列Buzzを返す() throws Exception {
+			assertEquals("Buzz", fizzbuzz.convert(5));
+		}
+	}
+	public static class その他の場合{
+		private FizzBuzz fizzbuzz;
 		@BeforeEach
 		public void 前準備() {
 			// 前準備
@@ -40,16 +55,5 @@ public class FizzBuzzTest {
 		public void _2を渡したら文字列2を返す() throws Exception {
 			assertEquals("2", fizzbuzz.convert(2));
 		}
-
-		@Test
-		public void _3を渡したら文字列Fizzを返す() throws Exception {
-			assertEquals("Fizz", fizzbuzz.convert(3));
-		}
-
-		@Test
-		public void _5を渡したら文字列Buzzを返す() throws Exception {
-			assertEquals("Buzz", fizzbuzz.convert(5));
-		}
 	}
-
 }
