@@ -11,6 +11,7 @@ class FizzBuzzTest {
 
 	@BeforeEach
 	public void 前準備() {
+		// 前準備
 		fizzbuzz = new FizzBuzz();
 	}
 
@@ -23,19 +24,11 @@ class FizzBuzzTest {
 
 	@Test
 	public void _2を渡したら文字列2を返す() throws Exception {
-		// 前準備
-		FizzBuzz fizzbuzz = new FizzBuzz();
-		// 実行
-		// 検証
 		assertEquals("2", fizzbuzz.convert(2));
 	}
 
 	@Test
 	public void _3を渡したら文字列Fizzを返す() throws Exception {
-		// 前準備
-		FizzBuzz fizzbuzz = new FizzBuzz();
-		// 実行
-		// 検証
 		assertEquals("Fizz", fizzbuzz.convert(3));
 	}
 
