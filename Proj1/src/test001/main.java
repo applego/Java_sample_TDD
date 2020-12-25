@@ -1,12 +1,13 @@
 /**
  *
  */
+package test001;
 
 /**
- * @author yusuke.tsuneshige_ts
+ *
  *
  */
-public class Sample001 {
+public class main {
 
 	/**
 	 * @param args
@@ -20,6 +21,7 @@ public class Sample001 {
 			System.out.println("---");
 			System.out.println(i);
 		}
+
 	}
 
 }
