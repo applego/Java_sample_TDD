@@ -7,8 +7,11 @@ import org.junit.jupiter.api.Test;
 class FizzBuzzTest {
 
 	@Test
-	void test() {
-		fail("これは落ちるはず");
+	public void _1を渡したら文字列1を返す() throws Exception {
+		// 前準備
+		// 実行
+		// 検証
+		assertEquals("1", fizzbuzz.convert(1));
 	}
 
 }
