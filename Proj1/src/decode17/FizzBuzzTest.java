@@ -51,9 +51,5 @@ public class FizzBuzzTest {
 			assertEquals("1", fizzbuzz.convert(1));
 		}
 
-		@Test
-		public void _2を渡したら文字列2を返す() throws Exception {
-			assertEquals("2", fizzbuzz.convert(2));
-		}
 	}
 }
