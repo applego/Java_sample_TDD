@@ -8,7 +8,7 @@ class FizzBuzzTest {
 
 	@Test
 	void test() {
-		fail("まだ実装されていません");
+		fail("これは落ちるはず");
 	}
 
 }
